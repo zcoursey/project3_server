@@ -7,9 +7,10 @@ import roleRouter from "./routes/RoleRoutes.js";
 const app = express();
 
 app.use(cors({
-  origin: ["http://localhost:5173", "https://sc-colleges.vercel.app"],
+  origin: "https://mini-proj3-front.vercel.app",
   credentials: true,
 }));
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
